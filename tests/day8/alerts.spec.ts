@@ -56,7 +56,7 @@ test('prompt alert', async({page})=>{
 //page.once
 
 
-test('simple alert', async({page})=>{
+test('simple alert 2', async({page})=>{
 
     await page.goto('https://testautomationpractice.blogspot.com/')
 
