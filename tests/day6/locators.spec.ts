@@ -39,7 +39,7 @@ test('CSS', async()=>{
 
 })
 
-test.only('xpath',async()=>{
+test('xpath',async()=>{
     const browser = await chromium.launch();
     const context = await browser.newContext();
     const page = await context.newPage();

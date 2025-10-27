@@ -7,7 +7,7 @@ import data from '../../TestData/testdata.json'
 import fs from 'fs'
 import path from 'path'
 
-test.only('json test 1',async({page})=>{
+test('json test 1',async({page})=>{
     await page.goto("https://opensource-demo.orangehrmlive.com/")
     await page.getByPlaceholder("Username").fill(data.username)
     await page.getByPlaceholder("Password").fill(data.password)

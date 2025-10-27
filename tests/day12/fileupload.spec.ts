@@ -28,7 +28,7 @@ test('multi file upload', async({page})=>{
 })
 
 //file upload using event handlers
-test.only('multi file upload - event handlers', async({page})=>{
+test('multi file upload - event handlers', async({page})=>{
     await page.goto("https://testautomationpractice.blogspot.com/")
     await page.evaluate(()=>{
         window.scrollBy(0,1600)

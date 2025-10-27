@@ -48,7 +48,7 @@ test('multitab - context', async()=>{
 
 })
 
-test.only('multitab - promise', async()=>{
+test('multitab - promise', async()=>{
     const browser = await chromium.launch();
     const context = await browser.newContext();
     const page = await context.newPage();

@@ -39,7 +39,7 @@ test('slow', async({page,browserName}) => {
 })
 
 //fail
-test.only('fail', async({page,browserName}) => {
+test('fail', async({page,browserName}) => {
     test.fail();
     await page.goto('https://testautomationpractice.blogspot.com/')
     await page.locator('#male').scrollIntoViewIfNeeded();

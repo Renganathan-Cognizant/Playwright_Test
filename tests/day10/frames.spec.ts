@@ -30,7 +30,7 @@ test('frames approach2', async ({page})=>{
     await page.waitForTimeout(2000);
 })
 
-test.only('Nestedframes', async ({page})=>{
+test('Nestedframes', async ({page})=>{
     await page.goto("https://letcode.in/frame");
     const allframes = page.frames(); //returns an array
     console.log("No. of frames: " + allframes.length)

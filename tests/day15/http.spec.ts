@@ -1,6 +1,6 @@
 import {test} from '@playwright/test';
 
-test.only('http',async({browser})=>{
+test('http',async({browser})=>{
     const context = await browser.newContext({
         httpCredentials:{
             username:'admin',
